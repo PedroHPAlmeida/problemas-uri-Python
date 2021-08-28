@@ -10,4 +10,4 @@ maiorAB = ((a + b) + abs(a - b)) / 2
 maior = ((maiorAB + c) + abs(maiorAB - c)) / 2
 
 #saída
-print("{}{:.0f}{} eh o maior".format("\033[4;35;47m", maior, "\033[m"))
+print("{:.0f} eh o maior".format(maior))
