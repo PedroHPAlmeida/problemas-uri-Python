@@ -16,5 +16,5 @@ else:
     x1 = (-b + sqrt(delta)) / (2 * a)
     x2 = (-b - sqrt(delta)) / (2 * a)
 
-    print(f"R1 = {x1:.5f}")
-    print(f"R2 = {x2:.5f}")
+    print("R1 = {:.5f}".format(x1))
+    print("R2 = {:.5f}".format(x2))
