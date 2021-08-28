@@ -1,6 +1,3 @@
-#layout
-cores = {"limpa":"\033[m", 
-        "verde":"\033[4;32m"}
 #entrada
 km = int(input())
 litros = float(input())
@@ -9,4 +6,4 @@ litros = float(input())
 kmPorLitro = km / litros
 
 #saída
-print("{}{:.3f}{} km/l".format(cores["verde"], kmPorLitro, cores["limpa"]))
+print("{:.3f} km/l".format(kmPorLitro))
