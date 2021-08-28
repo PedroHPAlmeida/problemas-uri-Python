@@ -6,4 +6,4 @@ b = int(input())
 x = a + b
 
 #saída
-print("X = {}\n".format(x))
+print("X = {}".format(x))
