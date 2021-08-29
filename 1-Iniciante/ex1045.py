@@ -1,36 +1,19 @@
 #entrada
-l1, l2, l3 = str(input()).split()
-l1 = float(l1)
-l2 = float(l2)
-l3 = float(l3)
+valores = []
+a, b, c = str(input()).split()
+a = float(a)
+b = float(b)
+c = float(c)
+
+valores.append(a)
+valores.append(b)
+valores.append(c)
 
 #processamento
-#ordem descrescente
-if l1 >= l2 >= l3:
-    a = l1
-    b = l2
-    c = l3
-elif l1 >= l3 > l2:
-    a = l1
-    b = l3
-    c = l2
-elif l2 > l1 >= l3:
-    a = l2
-    b = l1
-    c = l3
-elif l2 > l3 > l1:
-    a = l2
-    b = l3
-    c = l1
-elif l3 > l1 >= l2:
-    a = l3
-    b = l1
-    c = l2
-else:
-    a = l3
-    b = l2
-    c = l1
-
+valores = sorted(valores, reverse=True)
+a = valores[0]
+b = valores[1]
+c = valores[2]
 
 #processamento/saída
 if a >= (b + c): #forma um triangulo?
