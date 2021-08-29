@@ -13,4 +13,4 @@ for lin in range(0,5):
 total = preco * qnt
 
 #saída
-print(f"Total: R$ {total:.2f}")
+print("Total: R$ {:.2f}".format(total))
