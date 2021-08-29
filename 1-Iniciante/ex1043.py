@@ -7,7 +7,7 @@ c = float(c)
 #processamento/saída
 if (a + b) > c and (a + c) > b and (c + b) > a:
     perimetro = a + b + c
-    print(f"Perimetro = {perimetro:.1f}")
+    print("Perimetro = {:.1f}".format(perimetro))
 else:
     area = ((a + b) * c) / 2
-    print(f"Area = {area:.1f}")
+    print("Area = {:.1f}".format(area))
