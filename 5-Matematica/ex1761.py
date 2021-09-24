@@ -1,6 +1,5 @@
-from math import tan
+from math import tan, radians
 #entrada
-pi = 3.141592654
 while True:
    try:
       angulo, distanciaArvore, alturaElfo = str(input()).split()
@@ -9,7 +8,7 @@ while True:
       alturaElfo = float(alturaElfo)
 
       #processamento
-      alturaArvore = tan(angulo * (pi/180)) * distanciaArvore + alturaElfo
+      alturaArvore = tan(radians(angulo)) * distanciaArvore + alturaElfo
       qntdCordao = alturaArvore * 5
 
       #saida
