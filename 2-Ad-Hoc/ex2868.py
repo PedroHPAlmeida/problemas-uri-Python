@@ -19,9 +19,7 @@ for i in range(0, n):
     diferenca = abs(respCerta - respErrada)
 
     errou = 'E'
-    for j in range(0, diferenca):
-        errou += 'r'
-
+    errou += 'r' * diferenca
     errou += 'ou!'
 
     #saida
